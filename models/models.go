@@ -31,7 +31,7 @@ import (
 	"github.com/astaxie/beego"
 	"github.com/lunny/xorm"
 
-	"github.com/Unknwon/gowalker/utils"
+	"utils"
 )
 
 // A PkgTag descriables the project revision tag for its sub-projects,

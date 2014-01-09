@@ -21,9 +21,9 @@ import (
 	"strings"
 
 	"github.com/Unknwon/com"
-	"github.com/Unknwon/gowalker/utils"
 	"github.com/Unknwon/hv"
 	"github.com/astaxie/beego"
+	"utils"
 )
 
 // SearchPkg returns packages that import path and synopsis contains keyword.

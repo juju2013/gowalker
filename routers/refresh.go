@@ -18,8 +18,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/Unknwon/gowalker/doc"
-	"github.com/Unknwon/gowalker/utils"
+	"doc"
+	"utils"
 )
 
 // RefreshRouter serves search pages.

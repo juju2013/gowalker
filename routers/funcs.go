@@ -17,7 +17,7 @@ package routers
 import (
 	"strings"
 
-	"github.com/Unknwon/gowalker/models"
+	"models"
 )
 
 // FuncsRouter serves AJAX function code API page.

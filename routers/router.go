@@ -20,10 +20,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Unknwon/gowalker/models"
-	"github.com/Unknwon/gowalker/utils"
 	"github.com/Unknwon/hv"
 	"github.com/astaxie/beego"
+	"models"
+	"utils"
 )
 
 var (

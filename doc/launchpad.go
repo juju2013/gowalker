@@ -30,8 +30,8 @@ import (
 	"strings"
 
 	"github.com/Unknwon/com"
-	"github.com/Unknwon/gowalker/utils"
 	"github.com/Unknwon/hv"
+	"utils"
 )
 
 type byHash []byte

@@ -19,8 +19,8 @@ import (
 	"html/template"
 	"strings"
 
-	"github.com/Unknwon/gowalker/utils"
 	"github.com/astaxie/beego"
+	"utils"
 )
 
 var robotTxt string

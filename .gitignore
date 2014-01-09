@@ -13,6 +13,7 @@ data/
 .idea/
 bale/
 public/
+github.com/
 
 # Architecture specific extensions/prefixes
 *.[568vq]

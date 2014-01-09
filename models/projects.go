@@ -21,9 +21,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Unknwon/gowalker/utils"
 	"github.com/Unknwon/hv"
 	"github.com/astaxie/beego"
+	"utils"
 )
 
 /*

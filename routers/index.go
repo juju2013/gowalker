@@ -17,7 +17,7 @@ package routers
 import (
 	"strconv"
 
-	"github.com/Unknwon/gowalker/models"
+	"models"
 )
 
 // indexStats represents statistic information.

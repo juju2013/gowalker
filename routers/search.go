@@ -17,8 +17,8 @@ package routers
 import (
 	"strings"
 
-	"github.com/Unknwon/gowalker/models"
 	"github.com/Unknwon/hv"
+	"models"
 )
 
 // SearchRouter serves search pages.

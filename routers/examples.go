@@ -22,9 +22,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/Unknwon/gowalker/doc"
-	"github.com/Unknwon/gowalker/models"
+	"doc"
 	"github.com/Unknwon/hv"
+	"models"
 )
 
 // ExamplesRouter serves examples pages.

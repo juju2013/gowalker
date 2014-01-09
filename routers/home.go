@@ -26,12 +26,12 @@ import (
 	"strings"
 	"time"
 
+	"doc"
 	"github.com/Unknwon/com"
-	"github.com/Unknwon/gowalker/doc"
-	"github.com/Unknwon/gowalker/models"
-	"github.com/Unknwon/gowalker/utils"
 	"github.com/Unknwon/hv"
 	"github.com/astaxie/beego"
+	"models"
+	"utils"
 )
 
 var (
