@@ -28,7 +28,7 @@
         {{if eq .Lang "en-US"}}
         <p>Fail to parse Gist because error: <b>{{.ErrMsg}}.</b></p>
         <p>Click <a href="/{{.ImportPath}}">here</a> to back to documentation page.</p>
-        {{else if eq .Lang "zh-CN"}}
+        {{else}}
         <p>由于以下原因导致 Gist 解析失败: <b>{{.ErrMsg}}.</b></p>
         <p>单击 <a href="/{{.ImportPath}}">此处</a> 返回文档页面。</p>
         {{end}}

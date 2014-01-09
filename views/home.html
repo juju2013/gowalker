@@ -56,7 +56,7 @@
             <p class="text-success">
                 Please read the <a href="/about">About Page</a> for information about hacking with Go Walker and more.
             </p>
-            {{else if eq .Lang "zh-CN"}}
+            {{else}}
             <h4><b>超凡体验，您值得拥有.</b></h4>
             <p>
                 Go Walker 是一个可以在线生成并浏览 <a target="_blank" href="http://docs.studygolang.com/">Go</a> 项目 API 文档及
@@ -162,7 +162,7 @@
 			<p>
                 {{if eq .Lang "en-US"}}
 				<b>Hacker View</b> provides source file based project code view on the fly for Go Standard Library, Go Subrepo and command line project.
-                {{else if eq .Lang "zh-CN"}}
+                {{else}}
                 <b>黑客视图</b> 允许您对 Go 标准库、Go 官方维护库和命令行项目进行基于源文件的即时浏览。
                 {{end}}
 			</p>

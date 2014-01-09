@@ -11,7 +11,7 @@
     	{{if eq .Lang "en-US"}}
 		<strong>Congratulations!</strong>
 		You successfully refreshed this project documentation at <i>{{.UtcTime}}</i>!
-		{{else if eq .Lang "zh-CN"}}
+		{{else}}
 		<strong>恭喜！</strong>
 		您成功于 <i>{{.UtcTime}}</i> 刷新了本项目文档！
 		{{end}}
@@ -25,7 +25,7 @@
     	{{if eq .Lang "en-US"}}
 		<strong>Information!</strong>
 		AstaXie launched an open source program that provides <span class="label label-info">examples</span> for every function of <strong>Go Standard Library</strong>, you shouldn't miss this great project: <a target="_blank" href="https://github.com/astaxie/gopkg/tree/master/{{.ImportPath}}" class="label label-success">gopkg</a>.
-		{{else if eq .Lang "zh-CN"}}
+		{{else}}
 		<strong>友情提示：</strong>
 		Asta谢 在 github 上发起了 <strong>Go </strong> 标准库函数 <span class="label label-info">示例</span> 项目，每个函数都有相应操作示例，您绝对不容错过！点击这里访问：<a target="_blank" href="https://github.com/astaxie/gopkg/tree/master/{{.ImportPath}}" class="label label-success">gopkg</a>.
 		{{end}}
@@ -37,7 +37,7 @@
     	{{if eq .Lang "en-US"}}
 		<strong>Prompt!</strong>
 		The following link will redirect to raw search for keyword <strong><a rel="nofollow" href="/search?q={{.ImportPath}}">{{.ImportPath}}</a></strong>.
-		{{else if eq .Lang "zh-CN"}}
+		{{else}}
 		<strong>温馨提示</strong>
 		如果您想要使用与标准库重名的关键字进行搜索，请单击此链接：<strong><a rel="nofollow" href="/search?q={{.ImportPath}}">{{.ImportPath}}</a></strong>.
 		{{end}}
@@ -143,11 +143,13 @@
 
 				<h2>
 					{{if .IsCmd}}
-					Command
-					{{else if .IsHasFiles}}
-					Package
-					{{else}}
-					Project
+						Command
+					{{else}} 
+						{{if .IsHasFiles}}
+							Package
+						{{else}}
+							Project
+						{{end}}
 					{{end}}
 
 					{{.ProName}} 
@@ -216,7 +218,7 @@
 					{{end}}
 
 					Go Walker generated this page <i>{{.TimeSince}}</i>. <a class="btn" href="/refresh?q={{.ImportPath}}">Refresh</a>
-					{{else if eq .Lang "zh-CN"}}
+					{{else}}
 					{{if .IsHasFiles}}
 					项目 <b>{{.ProName}}</b> 共计导入 
 					{{if .IsHasImports}}
